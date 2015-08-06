@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngularJS Calendar</title>
+		<meta charset="utf-8" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<style type="text/css">
+			.muted {
+				color:#B3B3B3;
+			}
+			.calhead {
+				font-weight: bold;
+			 	color: #538EE8;
+			}
+			.Available {
+			        background-color: #DDFFCC !important;
+			    }
+			
+			    .Booked {
+			        background-color: #FFC0BD !important;
+			    }
+			
+			    .BookingStart {
+			        background-image: url(../images/start-cal-cell.jpg);
+			        background-repeat: no-repeat;
+			    }
+			
+			    .BookingEnd {
+			        background-image: url(../images/end-cal-cell.jpg);
+			        background-repeat: no-repeat;
+			    }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Calendar</h1>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 margin-bottom">
+					<table class="table-condensed table-bordered table-striped table-responsive">
+						<thead>
+							<tr>
+								<th class="text-center" style="background-color: #F5F5F5;" colspan="7">
+									<a class="btn calhead"><i class="fa fa-chevron-left"></i></a>
+									<a class="btn calhead">July 2015</a>
+									<a class="btn calhead"><i class="fa fa-chevron-right"></i></a>
+								</th>
+							</tr>
+							<tr>
+								<th>Su</th>
+								<th>Mo</th>
+								<th>Tu</th>
+								<th>We</th>
+								<th>Th</th>
+								<th>Fr</th>
+								<th>Sa</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="Available">1</td>
+								<td class="Available">2</td>
+								<td class="Available">3</td>
+								<td class="Available">4</td>
+							</tr>
+							<tr>
+								<td class="Available">5</td>
+								<td class="Available">6</td>
+								<td class="Available">7</td>
+								<td class="Available">8</td>
+								<td class="Available">9</td>
+								<td class="Available">10</td>
+								<td class="Available">11</td>
+							</tr>
+							<tr>
+								<td class="Available">12</td>
+								<td class="Available">13</td>
+								<td class="Available">14</td>
+								<td class="Available">15</td>
+								<td class="BookingStart">16</td>
+								<td class="Booked">17</td>
+								<td class="Booked">18</td>
+							</tr>
+							<tr>
+								<td class="Booked">19</td>
+								<td class="Booked">20</td>
+								<td class="Booked">21</td>
+								<td class="Booked">22</td>
+								<td class="Booked">23</td>
+								<td class="BookingEnd">24</td>
+								<td class="Available">25</td>
+							</tr>
+							<tr>
+								<td class="Available">26</td>
+								<td class="Available">27</td>
+								<td class="Available">28</td>
+								<td class="Available">29</td>
+								<td class="Available">30</td>
+								<td class="Available">31</td>
+								<td class="muted">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 margin-bottom">
+					<table class="table-condensed table-bordered table-striped table-responsive">
+						<thead>
+							<tr>
+								<th class="text-center" colspan="7" style="background-color: #F5F5F5;">
+									<a class="btn calhead"><i class="fa fa-chevron-left"></i></a>
+									<a class="btn calhead">August 2015</a>
+									<a class="btn calhead"><i class="fa fa-chevron-right"></i></a>
+								</th>
+							</tr>
+							<tr>
+								<th>Su</th>
+								<th>Mo</th>
+								<th>Tu</th>
+								<th>We</th>
+								<th>Th</th>
+								<th>Fr</th>
+								<th>Sa</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="Available">1</td>
+							</tr>
+							<tr>
+								<td class="Available">2</td>
+								<td class="Available">3</td>
+								<td class="Available">4</td>
+								<td class="Available">5</td>
+								<td class="Available">6</td>
+								<td class="Available">7</td>
+								<td class="Available">8</td>
+							</tr>
+							<tr>
+								<td class="Available">9</td>
+								<td class="Available">10</td>
+								<td class="Available">11</td>
+								<td class="Available">12</td>
+								<td class="Available">13</td>
+								<td class="Available">14</td>
+								<td class="Available">15</td>
+							</tr>
+							<tr>
+								<td class="Available">16</td>
+								<td class="Available">17</td>
+								<td class="Available">18</td>
+								<td class="Available">19</td>
+								<td class="Available">20</td>
+								<td class="Available">21</td>
+								<td class="Available">22</td>
+							</tr>
+							<tr>
+								<td class="Available">23</td>
+								<td class="Available">24</td>
+								<td class="Available">25</td>
+								<td class="Available">26</td>
+								<td class="Available">27</td>
+								<td class="Available">28</td>
+								<td class="Available">29</td>
+							</tr>
+							<tr>
+								<td class="BookingStart">30</td>
+								<td class="Booked">31</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 margin-bottom">
+					<table class="table-condensed table-bordered table-striped table-responsive">
+						<thead>
+							<tr>
+								<th class="text-center" colspan="7" style="background-color: #F5F5F5;">
+									<a class="btn calhead"><i class="fa fa-chevron-left"></i></a>
+									<a class="btn calhead">September 2015</a>
+									<a class="btn calhead"><i class="fa fa-chevron-right"></i></a>
+								</th>
+							</tr>
+							<tr>
+								<th>Su</th>
+								<th>Mo</th>
+								<th>Tu</th>
+								<th>We</th>
+								<th>Th</th>
+								<th>Fr</th>
+								<th>Sa</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="Booked">1</td>
+								<td class="Booked">2</td>
+								<td class="Booked">3</td>
+								<td class="Booked">4</td>
+								<td class="Booked">5</td>
+							</tr>
+							<tr>
+								<td class="Booked">6</td>
+								<td class="Booked">7</td>
+								<td class="Booked">8</td>
+								<td class="Booked">9</td>
+								<td class="BookingEnd">10</td>
+								<td class="Available">11</td>
+								<td class="Available">12</td>
+							</tr>
+							<tr>
+								<td class="Available">13</td>
+								<td class="Available">14</td>
+								<td class="Available">15</td>
+								<td class="Available">16</td>
+								<td class="Available">17</td>
+								<td class="Available">18</td>
+								<td class="Available">19</td>
+							</tr>
+							<tr>
+								<td class="Available">20</td>
+								<td class="Available">21</td>
+								<td class="Available">22</td>
+								<td class="Available">23</td>
+								<td class="Available">24</td>
+								<td class="Available">25</td>
+								<td class="Available">26</td>
+							</tr>
+							<tr>
+								<td class="Available">27</td>
+								<td class="Available">28</td>
+								<td class="Available">29</td>
+								<td class="Available">30</td>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<table class="table-condensed table-bordered table-striped table-responsive">
+						<thead>
+							<tr>
+								<th class="text-center" colspan="7" style="background-color: #F5F5F5;">
+									<a class="btn calhead"><i class="fa fa-chevron-left"></i></a>
+									<a class="btn calhead">October 2015</a>
+									<a class="btn calhead"><i class="fa fa-chevron-right"></i></a>
+								</th>
+							</tr>
+							<tr>
+								<th>Su</th>
+								<th>Mo</th>
+								<th>Tu</th>
+								<th>We</th>
+								<th>Th</th>
+								<th>Fr</th>
+								<th>Sa</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+								<td>&nbsp;</td>
+								<td class="Available">1</td>
+								<td class="Available">2</td>
+								<td class="Available">3</td>
+							</tr>
+							<tr>
+								<td class="Available">4</td>
+								<td class="Available">5</td>
+								<td class="Available">6</td>
+								<td class="Available">7</td>
+								<td class="Available">8</td>
+								<td class="Available">9</td>
+								<td class="Available">10</td>
+							</tr>
+							<tr>
+								<td class="Available">11</td>
+								<td class="Available">12</td>
+								<td class="Available">13</td>
+								<td class="Available">14</td>
+								<td class="Available">15</td>
+								<td class="Available">16</td>
+								<td class="Available">17</td>
+							</tr>
+							<tr>
+								<td class="Available">18</td>
+								<td class="Available">19</td>
+								<td class="Available">20</td>
+								<td class="Available">21</td>
+								<td class="Available">22</td>
+								<td class="Available">23</td>
+								<td class="Available">24</td>
+							</tr>
+							<tr>
+								<td class="Available">25</td>
+								<td class="Available">26</td>
+								<td class="Available">27</td>
+								<td class="Available">28</td>
+								<td class="Available">29</td>
+								<td class="Available">30</td>
+								<td class="Available">31</td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td>&nbsp;</td>
+								<td class="muted">&nbsp;</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+	</body>
+
+</html>
